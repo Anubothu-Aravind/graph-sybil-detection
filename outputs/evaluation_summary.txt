@@ -1,0 +1,17 @@
+========================================================================================
+                          GRAPHSHIELD BENCHMARK EVALUATION SUMMARY
+========================================================================================
+
+Dataset                     Algorithm                   Accuracy   Precision   Recall     F1-Score   Iters    Runtime
+------------------------------------------------------------------------------------------------------------------------
+Synthetic (1,000 nodes)     GraphShield (Sparse LP)      100.0%     1.0000     1.0000     1.0000     31       0.032s
+Synthetic (1,000 nodes)     Baseline (LabelSpreading)    100.0%     1.0000     1.0000     1.0000     39       0.035s
+
+Cora (2,708 nodes)          GraphShield (Sparse LP)       78.8%     0.7943     0.7798     0.7824     40       0.109s
+Cora (2,708 nodes)          Baseline (LabelSpreading)     79.7%     0.8131     0.7852     0.7937     50       0.125s
+
+PubMed (19,717 nodes)       GraphShield (Sparse LP)       81.1%     0.8045     0.7916     0.7968     41       0.888s
+PubMed (19,717 nodes)       Baseline (LabelSpreading)     81.9%     0.8128     0.7995     0.8047     50       0.940s
+========================================================================================
+All evaluations conducted with 20% training seeds and 80% strictly withheld test nodes.
+Hardware: Apple Silicon M-series (MPS GPU / Sparse CPU).

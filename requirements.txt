@@ -13,6 +13,7 @@ torch_geometric>=2.5.0
 streamlit>=1.28.0
 pyvis>=0.3.2
 plotly>=5.17.0
+matplotlib>=3.8.0
 
 # Testing and Validation
 pytest>=7.4.0
